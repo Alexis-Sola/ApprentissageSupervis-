@@ -76,7 +76,7 @@ def ToInt(dataframe):
 #Conversion des acides en int
 data_train = ToInt(data_train)
 data_test = ToInt(data_test)
-print("Info: onversion en int terminé")
+print("Info: conversion en int terminé")
 
 # Définition des features
 def ToList(dataframe):
@@ -258,7 +258,7 @@ for epoch in range(epoch):
             break
         predictionEpoch = goodPrediction/cpt2
 
-    print(running_loss/cpt, predictionEpoch)
+    print('Epoch :', epoch + 1, 'Loss :', running_loss/cpt, "Accuracy :", predictionEpoch)
 
 
 #On évalue le model sur le jeu de test
